@@ -1,1 +1,1 @@
-export const defaultWords = ["word1", "word2","word3"];
+export const defaultWords = ["word1", "word2", "word3"];

@@ -21,9 +21,8 @@ export const checkFill = (props) => {
 
   var regExpSource = defaultWords.join("|");
   var regExpFilter = new RegExp(regExpSource, "ig");
-  var result = props.text.replace(
-    regExpFilter,
-    (word) => replaceFunction(word) 
+  var result = props.text.replace(regExpFilter, (word) =>
+    replaceFunction(word)
   );
   return result;
 };
@@ -33,6 +32,5 @@ const replaceFunction = (word) => {
   for (let i = 0; i < word.length; i++) {
     asteriks += "*";
   }
-
   return asteriks;
 };
